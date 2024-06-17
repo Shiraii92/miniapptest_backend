@@ -45,7 +45,7 @@ app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}`);
 
   const botToken = '7322904117:AAGkrmFmYFurFTgE6UcP0R1MJ-5YO5yUHs4';
-  const webhookUrl = `https://miniapptest-backend.vercel.app/webhook`; // Update this with your actual Vercel URL
+  const webhookUrl = `https://miniapptest-backend-git-master-shiraii92s-projects.vercel.app/webhook`; // Update this with your actual Vercel URL
 
   try {
     const response = await axios.post(`https://api.telegram.org/bot${botToken}/setWebhook`, {
