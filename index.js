@@ -19,7 +19,7 @@ bot.command('start', async (ctx) => {
 bot.command('lovetap', async (ctx) => {
     let user = ctx.message.from;
     console.log(user);
-    const webLink = "https://test-three-amber-91.vercel.app/";
+    const webLink = "miniapptest.vercel.app";
     ctx.reply("Hi! let's get you started. Click the button below", {
       reply_markup: {
         inline_keyboard: [
