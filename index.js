@@ -3,11 +3,11 @@ const express = require('express');
 const { webhookCallback } = require('grammy');
 const axios = require('axios');
 
-const bot = new Bot('7322904117:AAGkrmFmYFurFTgE6UcP0R1MJ-5YO5yUHs4'); // Replace with your actual bot token
+const bot = new Bot('7406205363:AAHQt5jcrx8EFTlxvMPPWt4mwqDXyHXbNeY'); // Replace with your actual bot token
 
 bot.api.setMyCommands([
     { command: "start", description: "Start Bot" },
-    { command: "lovetap", description: "Open LoveTap Mini App" },
+    { command: "FlippeningGame", description: "Open Flip Mini App" },
 ]);
 
 bot.command('start', async (ctx) => {
@@ -16,7 +16,7 @@ bot.command('start', async (ctx) => {
     console.log(user);
 });
 
-bot.command('lovetap', async (ctx) => {
+bot.command('FlippeningGame', async (ctx) => {
     let user = ctx.message.from;
     console.log(user);
     const webLink = "https://miniapptest.vercel.app/";
@@ -44,7 +44,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}`);
 
-  const botToken = '7322904117:AAGkrmFmYFurFTgE6UcP0R1MJ-5YO5yUHs4';
+  const botToken = '7406205363:AAHQt5jcrx8EFTlxvMPPWt4mwqDXyHXbNeY';
   const webhookUrl = `https://miniapptest-backend.vercel.app/webhook`; // Update this with your actual Vercel URL
 
   try {
