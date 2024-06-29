@@ -3,7 +3,7 @@ const express = require('express');
 const { webhookCallback } = require('grammy');
 const axios = require('axios');
 
-const bot = new Bot('7406205363:AAHQt5jcrx8EFTlxvMPPWt4mwqDXyHXbNeY'); // Replace with your actual bot token
+const bot = new Bot('7406205363:AAHUL0krcJN8JwiVVr_rIxWsQi5gHYo1sl0'); // Replace with your actual bot token
 
 bot.api.setMyCommands([
     { command: "start", description: "Start Bot" },
@@ -44,7 +44,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}`);
 
-  const botToken = '7406205363:AAHQt5jcrx8EFTlxvMPPWt4mwqDXyHXbNeY';
+  const botToken = '7406205363:AAHUL0krcJN8JwiVVr_rIxWsQi5gHYo1sl0';
   const webhookUrl = `https://miniapptest-backend.vercel.app/webhook`; // Update this with your actual Vercel URL
 
   try {
