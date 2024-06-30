@@ -7,7 +7,7 @@ const bot = new Bot('7406205363:AAHUL0krcJN8JwiVVr_rIxWsQi5gHYo1sl0'); // Replac
 
 bot.api.setMyCommands([
     { command: "start", description: "Start Bot" },
-    { command: "FlippeningGame", description: "Open Flip Mini App" },
+    { command: "flippeninggame", description: "Open Flip Mini App" },
 ]);
 
 bot.command('start', async (ctx) => {
@@ -16,7 +16,7 @@ bot.command('start', async (ctx) => {
     console.log(user);
 });
 
-bot.command('FlippeningGame', async (ctx) => {
+bot.command('flippeninggame', async (ctx) => {
     let user = ctx.message.from;
     console.log(user);
     const webLink = "https://miniapptest.vercel.app/";
